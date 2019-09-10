@@ -5,5 +5,138 @@ header {
     color: #aeb5b0;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAV2hezhgQByvK9ZNLVXY8qTw7vzm0dCcfZE57dsAdxC59Jn9-Sw);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #57514b;
+    background-size: cover;   
 }
+
+
+
+.flex-container {
+    display: flex;
+    height:400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    max-width: 100%;
+	height: auto;
+}
+
+.image img {
+	max-width: 100%;
+}
+
+.image-text {
+    color: #ed962b;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+    text-align: center;
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+}
+
+.image-text:hover :not(img) {
+    opacity: 1;
+}
+    
+img.meanddog {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px; 
+}
+
+img:hover {
+    filter: blur(2px);
+    transform: scale(1.5);
+    transition: all 0.4s ease-in-out;
+}
+
+h1 {
+    font-family: monospace;
+}
+
+h3 {
+    font-family: monospace;
+    font-style: italic;
+}
+
+table {
+    border-spacing: 2px 0;
+}
+
+table, th, td {
+    text-align: left;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+td::first-letter {
+    font-weight: bold;
+}
+
+tr:nth-child(odd):hover {
+    background-color: #57514b;
+}
+
+tr:nth-child(even):hover {
+    background-color: #ed962b;
+}
+
+tr:nth-child(even) {background-color: #e38d3d;
+}
+
+tr:nth-child(odd) {background-color: #736b64;
+}
+
+footer {
+    height: 150px;
+    width: 400px;
+    display: block;
+    border: 1px solid white;
+    margin-left: 410px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.logolist {
+    list-style-type: none;
+    border-left: 2px solid #ed962b;
+    border-right: 2px solid #ed962b;
+    padding-inline-start: 0px;
+}
+
+i {
+    transform: scale(1);
+    filter: blur(0px);
+    transition: background-color 0.5s ease;
+    color: grey;
+    padding: 40px;
+}
+
+i:hover {
+    color: #ed962b;
+}
+
+li {
+    display: inline;
+}
+
+
+
+
+
+  
