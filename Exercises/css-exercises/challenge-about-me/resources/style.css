@@ -105,7 +105,7 @@ tr:nth-child(odd) {background-color: #736b64;
 footer {
     height: 150px;
     width: 400px;
-    display: flexbox;
+    display: block;
     border: 1px solid white;
     margin-left: 410px;
     justify-content: center;
