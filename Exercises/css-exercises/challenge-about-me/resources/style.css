@@ -104,7 +104,10 @@ tr:nth-child(odd) {background-color: #736b64;
 
 footer {
     height: 150px;
+    width: 400px;
     display: grid;
+    border: 1px solid white;
+    margin-left: 160px;
     justify-content: center;
     align-items: center;
 }
@@ -121,6 +124,7 @@ i {
     filter: blur(0px);
     transition: background-color 0.5s ease;
     color: grey;
+    padding: 40px;
 }
 
 i:hover {
