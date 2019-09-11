@@ -1,0 +1,66 @@
+.everything {
+    border: 1px solid black;
+    width: 464px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    background-color: #abafb0;
+    width: 424px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: auto;
+    border-top: 20px ridge rgba(81,85,91,0.21);
+    border-left: 20px ridge rgba(81,85,91,0.21);
+    border-right: 20px solid white;
+    border-bottom: 20px ridge rgb(215, 219, 226);
+    border-width: 20px;
+}
+
+.flex-container>div {
+    background-color: #abafb0;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: bolder;
+    border: 3px dotted black;
+    border-top-style: none;
+    border-left-style: none;
+}
+
+.one {
+    color: blue;
+}
+
+.two {
+    color: green;
+}
+
+.three {
+    color: red;
+}
+
+.danger { 
+    position: relative;
+    box-shadow: inset -3px -3px rgba(131,147,153,1);
+}
+
+.danger:hover {
+    background-color: #74797a;
+}
+
+span {
+    opacity: 0;
+}
+
+span:hover {
+    opacity: 1;
+}
+
