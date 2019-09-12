@@ -50,6 +50,7 @@
 .danger { 
     position: relative;
     box-shadow: inset -3px -3px rgba(131,147,153,1);
+    box-shadow :inset 3px 3px white;
 }
 
 .danger:hover {
