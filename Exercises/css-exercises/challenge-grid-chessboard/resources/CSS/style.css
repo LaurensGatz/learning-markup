@@ -8,6 +8,8 @@
     grid-template-columns: 50px 400px 50px;
     grid-template-rows: 50px 400px 50px;
     background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .numbers {
