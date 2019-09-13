@@ -37,8 +37,6 @@ header {
 .image-text {
     color: #ed962b;
     opacity: 0;
-    transition: .3s;
-    visibility: hidden;
     text-align: center;
 	font-size: 22px;
 	position: absolute;
@@ -46,7 +44,7 @@ header {
     left: 50%;
 }
 
-.image-text:hover :not(img) {
+.image-text:hover {
     opacity: 1;
 }
     
