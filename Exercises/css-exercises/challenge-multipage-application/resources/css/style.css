@@ -8,13 +8,41 @@
   height: auto;
 }
 
+/* header */
 .headshot {
   border-radius: 50%;
 }
 
-.header-text {
+.name {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  border-bottom: 3px solid #504e50c7;
+  margin: 25px;
+}
+
+.links li {
+  padding: 10px;
+  color: #504e50c7;
+}
+
+.header-subtext {
+  display: flex;
+  justify-content: center;
+}
+
+/* Main */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .blockspace {
@@ -27,6 +55,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#eeeeee", endColorstr="#cccccc",GradientType=0 );
   margin: 5px;
   border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockspace p {
+  font-size: 12px;
 }
 
 .blockspace1 {
@@ -39,6 +74,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b0d4e3", endColorstr="#88bacf",GradientType=0 );
   margin: 5px;
   border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blockspace2 {
@@ -51,6 +89,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f1e767", endColorstr="#feb645",GradientType=0 );
   margin: 5px;
   border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blockspace3 {
@@ -63,11 +104,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#b5bdc8", endColorstr="#28343b",GradientType=0 );
   margin: 5px;
   border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blockspace4 {
   width: 300px;
-  height: 300px;
+  height: auto;
   background: #fac695;
   background: -moz-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
   background: -webkit-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%);
@@ -75,6 +119,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fac695", endColorstr="#ef8d31",GradientType=0 );
   margin: 5px;
   border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work {
@@ -83,11 +130,26 @@
 }
 
 .work i {
-  color: #504e50;
+  color: #504e50c7;
 }
 
 h1 {
-  color: #504e50;
+  color: #504e50c7;
+}
+
+.logolist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logolist li {
+  list-style-type: none;
+}
+
+.logolist i {
+  color: #504e50c7;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
