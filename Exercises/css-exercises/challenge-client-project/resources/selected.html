@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../resources/CSS/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Client project - multiple selected</h2>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Dashboard</a></li>
+            <li><a data-toggle="tab" href="#menu1">Download</a></li>
+            <li><a data-toggle="tab" href="#menu2">Upload</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="home" class="tab-pane fade in active">
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+
+                <!-- -------------------------------------------------------------------------------------DOWNLOAD -->
+                <div class="flex-container">
+                    <div class="column">
+                        <h2>Campuses</h2>
+                        <!--------------------------------------------------------------------- DOWNLOAD CAMPUSES -->
+                        <button class="accordion">Antwerpen</button>
+                        <div class="panel">
+                        </div>
+                        <button class="accordion">Brussel</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Charleroi</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Genk</button>
+
+                        <!-------------------------------------------------------------------- DOWNLOAD GROUPS -->
+
+                        <div class="panel">
+                            <button class="group">Easley</button>
+                            <div class="panel"></div>
+                            <button class="group">Hopper</button>
+                            <div class="panel"></div>
+                        </div>
+                        <button class="accordion">Gent</button>
+                        <div class="panel"></div>
+
+                    </div>
+                    <div class="column-scroll">
+                        <!-------------------------------------------------------------------- DOWNLOAD EASLEY TAB 2 -->
+                        <div class="wrapper">
+                            <h2>- Easley</h2>
+                        </div>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox" class="check" id="checkAll">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Aldo</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for=""> Axel</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Jing</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Kajetan</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Katrien</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Korneel</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Kris</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Laurens</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Luna</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Mansur</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Mitchell</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Sean</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <label for="">Zeger</label>
+                            </div>
+                        </div>
+                        <h2>- Hopper</h2>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class=" name">
+                                <input type="checkbox" class="check2" id="Genk">
+                                <label for="">Angel</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check2" id="Genk">
+                                <label for="">Ben1</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check2" id="Genk">
+                                <label for="">Ben2</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Selection</h2>
+                        <p><B>Selected:</B></p>
+                        <select multiple="multiple" id="mySelect">
+                            <option id="1">Axel</option>
+                            <option id="2">Kajetan</option>
+                            <option id="3">Kris</option>
+                            <option id="4">Luna</option>
+                            <option id="5">Sean</option>
+                        </select>
+                        <nav>
+                            <p><b>Document type:</b></p>
+                            <input type="checkbox">Absence
+                            <input type="checkbox">Contract
+                            <input type="checkbox">Time Sheet
+                        </nav>
+                        <nav>
+                            <ul>
+                                <select multiple="multiple" id="mySelect">
+                                    <option id="1">Axel_Absence_doc05/09.docx</option>
+                                    <option id="2">Axel_TimeSheet_sept.xlsx</option>
+                                    <option id="3">Kajetan_Absence_doc01/10.docx</option>
+                                    <option id="4">Kajetan_Absence_doc01/10.docx</option>
+                                    <option id="5">Kris_Learning_contract.docx</option>
+                                    <option id="6">Kris_TimeSheet_sept.xlsx</option>
+                                    <option id="7">Luna_Learning_contract.docx</option>
+                                    <option id="8">Luna_TimeSheet_sept.xlsx</option>
+                                    <option id="9">Sean_Learning_contract.docx</option>
+                                    <option id="10">Sean_TimeSheet_sept.xlsx</option>
+
+                                </select>
+                            </ul>
+                        </nav>
+                        <button class="DL">Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------------------------------------------------------------------------------------------UPLOAD -->
+            <div id="menu2" class="tab-pane fade">
+                <div class="flex-container">
+                    <div class="column">
+                        <h2>Campuses</h2>
+                        <!------------------------------------------------------------------------- UPLOAD CAMPUSES -->
+                        <button class="accordion">Antwerpen</button>
+                        <div class="panel">
+                        </div>
+                        <button class="accordion">Brussel</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Charleroi</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Genk</button>
+
+                        <!-------------------------------------------------------------------- UPLOAD GROUPS -->
+
+                        <div class="panel">
+                            <button class="group">Easley</button>
+                            <div class="panel"></div>
+                            <button class="group">Hopper</button>
+                            <div class="panel"></div>
+                        </div>
+                        <button class="accordion">Gent</button>
+                        <div class="panel"></div>
+
+                    </div>
+                    <div class="column">
+                        <!------------------------------------------------------------------------- UPLOAD EASLEY TAB 2 -->
+                        <div class="wrapper">
+                            <h2>Easley</h2>
+
+                        </div>
+                        <div id="names" class="wrapper">
+
+                            <div class="name">
+                                <input type="checkbox" class="check red" id="Genk" onclick="myFunction()">
+                                <b>Aldo</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Axel</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Jing</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Kajetan</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Katrien</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Korneel</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check red" id="Genk" onclick="myFunction()">
+                                <b>Kris</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Laurens</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Luna</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check red" id="Genk" onclick="myFunction()">
+                                <b>Mansur</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Mitchell</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Sean</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Zeger</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Profile</h2>
+                        <button class="edit">edit</button>
+                        <div class="profile-name">Name</div>
+                        <div class="profile-img"></div>
+                        <div class="documents-title">Absences</div>
+                        <div class="doc red">no file uploaded</div>
+                        <div class="documents-title">Contracts</div>
+                        <a href class="doc">Name_Learning_contract.docx</a>
+                        <div class="documents-title">Time Sheets</div>
+                        <a href class="doc">Name_TimeSheet_sept.xlsx</a>
+                        <a href class="doc">Name_TimeSheet_oct.xlsx</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+<script>
+    $("#checkAll").click(function () {
+        $(".check").prop('checked', $(this).prop('checked'));
+    });
+    $('option').mousedown(function (e) {
+        e.preventDefault();
+        $(this).prop('selected', $(this).prop('selected') ? false : true);
+        return false;
+    });
+    // ----------------------------------------
+
+    // --------------------------------
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>

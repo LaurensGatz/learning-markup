@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../resources/CSS/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Client project</h2>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Dashboard</a></li>
+            <li><a data-toggle="tab" href="#menu1">Download</a></li>
+            <li><a data-toggle="tab" href="#menu2">Upload</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="home" class="tab-pane fade in active">
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+
+                <!-- -------------------------------------------------------------------------------------DOWNLOAD -->
+                <div class="flex-container">
+                    <div class="column">
+                        <h2>Campuses</h2>
+                        <!------------------------------------------------------------------------- CAMPUSES -->
+                        <button class="accordion">Antwerpen</button>
+                        <div class="panel">
+                        </div>
+                        <button class="accordion">Brussel</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Charleroi</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Genk</button>
+
+                        <!-------------------------------------------------------------------- GROUPS -->
+
+                        <div class="panel">
+                            <button onclick="collapse()" id='btnEas' class="btn-select">Easley</button>
+                            <div class="panel"></div>
+                            <div class="btn-select">Hopper</div>
+                            <div class="panel"></div>
+                        </div>
+                        <button class="accordion">Gent</button>
+                        <div class="panel"></div>
+
+                    </div>
+                    <div id="downEas" class="column">
+                        <!------------------------------------------------------------------------- EASLEY TAB 2 -->
+                        <div class="wrapper">
+                            <h2>Easley</h2>
+                        </div>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox" class="check" id="checkAll">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Aldo</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Axel</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Jing</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Kajetan</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Katrien</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Korneel</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Kris</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Laurens</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Luna</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Mansur</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Mitchell</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Sean</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Zeger</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Profile</h2>
+                        <div class="profile-name">Name</div>
+                        <div class="profile-img"></div>
+                        <div class="documents-title">Absences</div>
+                        <div class="doc">Name_Absence_doc05/09.docx</div>
+                        <div class="documents-title">Contracts</div>
+                        <div class="doc">Name_Learning_contract.docx</div>
+                        <div class="documents-title">Time Sheets</div>
+                        <div class="doc">Name_TimeSheet_sept.xlsx</div>
+                        <div class="doc">Name_TimeSheet_oct.xlsx</div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------------->
+            <div id="menu2" class="tab-pane fade">
+                <div class="flex-container">
+                    <div class="column">
+                        <h2>Campuses</h2>
+                        <!------------------------------------------------------------------------- CAMPUSES -->
+                        <button class="accordion">Antwerpen</button>
+                        <div class="panel">
+                        </div>
+                        <button class="accordion">Brussel</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Charleroi</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Genk</button>
+
+                        <!-------------------------------------------------------------------- GROUPS -->
+
+                        <div class="panel">
+                            <button onclick="collapse()" id='btnEas' class="btn-select">Easley</button>
+                            <div class="panel"></div>
+                            <div class="btn-select">Hopper</div>
+                            <div class="panel"></div>
+                        </div>
+                        <button class="accordion">Gent</button>
+                        <div class="panel"></div>
+
+                    </div>
+                    <div id="downEas" class="column">
+                        <!------------------------------------------------------------------------- EASLEY TAB 2 -->
+                        <div class="wrapper">
+                            <h2>Easley</h2>
+                        </div>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox" class="check" id="checkAll">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Aldo</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Axel</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Jing</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Kajetan</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Katrien</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Korneel</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Kris</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Laurens</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Luna</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Mansur</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Mitchell</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Sean</b>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                <b>Zeger</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Profile</h2>
+                        <div class="profile-name">Name</div>
+                        <div class="profile-img"></div>
+                        <div class="documents-title">Absences</div>
+                        <div class="doc">Name_Absence_doc05/09.docx</div>
+                        <div class="documents-title">Contracts</div>
+                        <div class="doc">Name_Learning_contract.docx</div>
+                        <div class="documents-title">Time Sheets</div>
+                        <div class="doc">Name_TimeSheet_sept.xlsx</div>
+                        <div class="doc">Name_TimeSheet_oct.xlsx</div>
+
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+<script>
+    $("#checkAll").click(function () {
+        $(".check").prop('checked', $(this).prop('checked'));
+    });
+    $('option').mousedown(function (e) {
+        e.preventDefault();
+        $(this).prop('selected', $(this).prop('selected') ? false : true);
+        return false;
+    });
+    // --------------------------------
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>
