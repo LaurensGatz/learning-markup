@@ -13,55 +13,67 @@
         <div class="header">  
             <div class="header-text">
                 <ul class="links">
-                   <li><a href="about">About</a></li>
+                   <li><a href=mailto:laurens.gatz@gmail.com"?
+                       subject="subject text">Contact</a></li>
                    <li><a href="resume">Resume</a></li>
                 </ul>
-                <div class="name"><img class="headshot" src="resources/images/headshot.png" alt="Me"></div>
+                <div class="background"></div>
+                <div class="photo"><img class="headshot" src="resources/images/headshot.png" alt="Me"></div>
             </div>
             <div class="header-subtext">
-                Hello,<br/> my name is Laurens.
+                <p> Hello,<br/> my name is Laurens.
                 I'm a junior webdeveloper @ BeCode.
+                I'll be posting my work here.<br/>
+                So take a look and enjoy!</p>
         </div>
         <div class="main-content">
             <div class="work">
                 <div class="blockspace1">
-                    <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-flexing-your-css-muscles/index.html">
-                    <i class="fas fa-bomb fa-7x"></i></a>
+                    <div class="rotate">
+                        <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-flexing-your-css-muscles/index.html">
+                        <img src="resources/images/minesweeper.png" alt="mine sweeper"></a>
+                    </div>
                 </div>
                 <div class="blockspace">
-                    <b>Exercise 1</b>
+                    <div class="ex1"><b>Exercise 1</b></div>
                     <p>Here we had to recreate minesweeper<br/>
                     following the example we were given.</p> 
                 </div>
             </div>
             <div class="work">
                 <div class="blockspace">
-                    <b>Exercise 2</b>
-                    <p>In this exercise we had to make a chessboard.</p> 
+                    <div class="ex2"><b>Exercise 2</b></div>
+                    <p>In this exercise we had to make a chessboard.</p>
                 </div>
                 <div class="blockspace2">
-                    <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-grid-chessboard/index.html">
-                    <i class="fas fa-chess fa-7x"></i></a>
+                    <div class="rotate">
+                        <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-grid-chessboard/index.html">
+                        <img src="resources/images/chess.png" alt="chessboard"></a>
+                    </div>
                 </div>
             </div>
             <div class="work">
                 <div class="blockspace3">
-                    <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-multi-pager/index.html">
-                    <i class="fas fa-file-alt fa-7x"></i></a>
+                    <div class="rotate">
+                        <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-multi-pager/index.html">
+                        <i class="fas fa-file-alt fa-7x"></i></a>
+                    </div>
                 </div>
                 <div class="blockspace">
-                    <b>Exercise 3</b>
-                    <p>for this exercise we had to remake the "LOL" launcher-page.</p> 
+                    <div class="ex3"><b>Exercise 3</b></div>
+                    <p>for this exercise we had to remake<br/>part of the "LOL" launcher-webpage.</p>
                 </div>
             </div>
             <div class="work">
                 <div class="blockspace">
-                    <b>Exercise 4</b>
+                    <div class="ex4"><b>Exercise 4</b></div>
                     <p>recreating the "wowwee" website.</p> 
                 </div>
                 <div class="blockspace4">
-                    <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-wowwee-media-queries/index.html">
-                    <i class="fab fa-medium fa-7x"></i></a>
+                    <div class="rotate">
+                        <a href="https://laurensgatz.github.io/learning-markup/Exercises/css-exercises/challenge-wowwee-media-queries/index.html">
+                        <i class="fab fa-medium fa-7x"></i></a>
+                    </div>
                 </div>
             </div>
             
@@ -69,17 +81,17 @@
                     <ul class="logolist">
                             <li>
                                 <a href="https://www.linkedin.com/in/laurens-gatz-b6b469187/" target="_blank"> 
-                                    <i class="fab fa-linkedin-in fa-lg"></i>
+                                    <i class="fab fa-linkedin-in fa-2x"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/LaurensGatz"target="_blank">
-                                    <i class="fab fa-github fa-lg"></i>
+                                    <i class="fab fa-github fa-2x"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://stackoverflow.com/users/12047141/laurens-gatz" target="_blank">
-                                    <i class="fab fa-stack-overflow fa-lg"></i>
+                                    <i class="fab fa-stack-overflow fa-2x"></i>
                                 </a>
                             </li>
                         </ul>
@@ -87,4 +99,37 @@
         </div>
     </div>
 </body>
+<style> 
+        .background {
+          width: 50px;
+          height: 50px;
+          border-radius: 20%;
+          background-color: #4db4e0;
+          position: relative;
+          -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+          -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+          -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+          animation-name: example;
+          animation-duration: 6s;
+          animation-iteration-count: infinite;
+        }
+        
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes example {
+          0%   {background-color:#e4ae7c; left:150px; top:0px;}
+          25%  {background-color:#f1e767; left:1090px; top:0px;}
+          50%  {background-color:#4fbbe9d8; left:1090px; top:2060px;}
+          75%  {background-color:#76b990; left:150px; top:2060px;}
+          100% {background-color:#fac695; left:150px; top:0px;}
+        }
+        
+        /* Standard syntax */
+        @keyframes example {
+          0%   {background-color:#e4ae7c; left:150px; top:0px;}
+          25%  {background-color:#f1e767; left:1090px; top:0px;}
+          50%  {background-color:#4fbbe9d8; left:1090px; top:2060px;}
+          75%  {background-color:#76b990; left:150px; top:2060px;}
+          100% {background-color:#fac695; left:150px; top:0px;}
+        }
+        </style>
 </html>
