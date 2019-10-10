@@ -16,8 +16,6 @@ img {
 }
 
 .page-wrapper {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -69,7 +67,7 @@ img {
   display: flex;
   justify-content: center;
   padding: 40px;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -270,7 +268,59 @@ h1 {
 }
 
 .home {
-  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  color: #504e50c7;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.info {
+  padding: 5px 0 5px 0;
+}
+
+.info h3 {
+  color: #9ccde2;
+  text-decoration: underline;
+}
+
+.werk-ervaring {
+  padding: 5px 0 5px 0;
+}
+
+.werk-ervaring h3 {
+  color: #ece360;
+  text-decoration: underline;
+}
+
+.skills {
+  padding: 5px 0 5px 0;
+}
+
+.skills h3 {
+  color: #8592a3;
+  text-decoration: underline;
+}
+
+.andere-shit {
+  padding: 5px 0 5px 0;
+}
+
+.andere-shit h3 {
+  color: #fab370;
+  text-decoration: underline;
+}
+
+.info-icons {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+
+.info-icons {
+  color: #504e50c7;
 }
 
 /*# sourceMappingURL=style.css.map */
