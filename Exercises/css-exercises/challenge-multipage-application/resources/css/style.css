@@ -15,9 +15,12 @@ img {
   height: auto;
 }
 
-.pagewrapper {
+.page-wrapper {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* header */
@@ -222,9 +225,20 @@ img {
   transition-duration: 1s;
 }
 
+.rotate2:hover {
+  -webkit-transform: rotateZ(30deg);
+  -ms-transform: rotateZ(30deg);
+  transform: rotateZ(30deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
 .work {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .work i {
